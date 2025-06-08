@@ -12,7 +12,8 @@ const products = [
 
 function ProductList() {
   const dispatch = useDispatch();
-  const cartItems = useSelector(state => state.cart);
+  // KORREKT: Zugriff auf das Array
+  const cartItems = useSelector(state => state.cart.items);
 
   // Prüft, ob das Produkt bereits im Warenkorb ist
   const isInCart = (productName) =>
