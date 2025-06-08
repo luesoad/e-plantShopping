@@ -6,7 +6,6 @@ import Header from './Header';
 import './App.css';
 
 function App() {
-  // page: 'landing' | 'products' | 'cart'
   const [page, setPage] = useState('landing');
 
   const handleNavigate = (target) => {
@@ -16,7 +15,6 @@ function App() {
   };
 
   const handleGetStartedClick = () => setPage('products');
-  const handleHomeClick = () => setPage('products');
   const handleContinueShopping = () => setPage('products');
 
   return (
@@ -25,7 +23,6 @@ function App() {
         <Header
           onNavigate={handleNavigate}
           showCartButton={page !== 'cart'}
-          showHomeButton={page !== 'products'}
         />
       )}
       {page === 'landing' && (
