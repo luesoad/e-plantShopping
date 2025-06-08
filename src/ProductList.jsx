@@ -26,7 +26,7 @@ const products = [
   {
     name: 'Aloe Vera',
     cost: '$11.99',
-    image: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80',
     category: 'Sukkulenten'
   },
   {
